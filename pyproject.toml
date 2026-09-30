@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cs2xhair"
+version = "1.0.0"
+description = "Convert pre-1.41.8.2 CS2/CS:GO crosshairs (share codes or commands) to the new pixel-based crosshair system"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+cs2xhair = "cs2xhair.cli:main"
+
+[tool.setuptools]
+packages = ["cs2xhair"]
